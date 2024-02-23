@@ -24,6 +24,36 @@ a{
     text-decoration: none;
 }
 
+/* close menu style  */
+.open-menu{
+    display: none;
+}
+
+.open-menu path {
+    fill: var(--coolr-text-on-primary);
+}
+
+@media (max-width: 800px) {
+    .open-menu {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 21px 1fr 34px;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+/* open menu click */
+
+
+
+
+
 /* header style by flex */
 /* header {
     display: flex;
