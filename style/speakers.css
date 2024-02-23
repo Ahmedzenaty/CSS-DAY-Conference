@@ -20,16 +20,23 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 200px;
+    grid-row-gap: 150px;
     margin-left: 150px;
+    margin-bottom: 200px;
 }
 .speaker__box {
-    width: 462px;
-    margin-bottom: 100px;
+    max-width: 462px;
 }
 
 .speaker__image {
     width: 310px;
     height: 310px;
+    object-fit: cover;
+    margin-bottom: 36px;
+}
+.speaker__image--cut{
+    object-position: top;
 }
 .main__heading{
     color: var(--color-text);
@@ -56,6 +63,9 @@ body {
     text-decoration: underline;
 }
 
+.header__image--secondry g path {
+    fill: var(--color-text);
+}
 /* Responsive */
 @media (max-width: 580px) {
     .main{
@@ -83,5 +93,11 @@ body {
     }
     .main__seconedP{
         font-size: 16px;
+    }
+}
+/* Responsive speakers grid in 1000px width */
+@media (width <  1000px){
+    .main {
+        grid-template-columns: 1fr;
     }
 }

@@ -32,3 +32,51 @@
 .btn-img {
     vertical-align:middle;
 }
+
+/* Responsive style 1220 */
+@media (max-width : 1220px){
+    .main__heading{
+        font-size: 70px;
+    }
+    .button{
+        font-size: 24px;
+        padding: 0 32px;
+        height: 70px;
+    }
+    .btn-img{
+        width: 20px;
+    }
+}
+/* Responsive style 815 */
+@media (width < 880px){
+    .main{
+        margin: 75px;
+    } 
+}
+
+@media (width < 700px){
+    .button{
+        font-size: 16px;
+        margin-top: 24px;
+    }
+    .btn-container{
+        margin-top: 32px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Responsive style 590 */
+
+
+@media (width < 590px){
+    .main{
+        padding: 0px;
+    }
+    .main__heading{
+        font-size: 40px ;
+    }
+    .main__Sub--heading{
+        font-size: 24px;
+    }
+    
+}

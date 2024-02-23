@@ -15,7 +15,8 @@ body{
     font-family: "Inter",sans-serif;
     font-weight: bold;
 }
-p{
+p,
+h2{
     margin: 0;
 }
 a{
